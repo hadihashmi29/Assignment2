@@ -1,0 +1,650 @@
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.navbar {
+    height: 70px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo {
+    background-image: url("nav-logo.png");
+    background-size: cover;
+    height: 340px;
+    width: 350px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+    display: block;
+    margin-right: 20px;
+}
+ul li :hover {
+    color: #4db9e4;
+    transform: scale(1.05);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Background Video */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* Animation Keyframes */
+@keyframes animate {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    margin-top: 250px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation-name: animate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; 
+}
+
+.hero-one {
+    font-family: syne;
+    font-size:42px;
+    font-weight: 400;
+    position: relative;
+    animation-name: animate;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; 
+    width: 600px;
+    color : white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ 
+@keyframes slide {
+    from {
+        transform: translateX(-1100px);
+    }
+    to {
+        transform: translateX(0px) ;
+    }
+}
+.dashboard {
+    color: #fff;
+    margin-top: 80px;
+    padding: 40px 20px;
+    background-color: black;
+    text-align: center;
+    
+}
+.User {
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    margin-top: 70px;
+    font-size : 42px;
+    font-family: syne;
+    font-weight: 600;
+}
+.paragraph {
+    font-size: 24px;
+    font-weight: 300px;
+    margin-bottom: 100px;
+    font-family: syne;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+.progress-bar {
+    margin-top: 40px;
+    background: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+.progress {
+    background: #4caf50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 400px;
+    border-radius: 25px; 
+}
+
+.courses {
+    background: black;
+    padding: 40px 20px;
+    color: white;
+}
+.courses-one {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 100px;
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.course-two {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 5px ;
+}
+
+.course-card {
+    background: rgb(152, 220, 223);
+    height: 200px;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+
+@keyframes slideIn {
+
+    from {
+        transform: translateX(-1100px);
+    }
+    to {
+        transform: translateX(0px) ;
+    }
+}
+.panel-3 {
+    background-color: black;
+    margin-top: 160px;
+    color: white;
+    margin-bottom: 130px;
+}
+.panel-3-head {
+    font-family: syne;
+    margin-top: 30px;
+    margin-left: 270px;
+    margin-bottom: 160px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    width: 800px;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.panel-3-head span {
+    color: lightseagreen;
+}
+.multi-column {
+    margin-left: 10px;
+    margin-right: 15px;
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 1px solid transparent;
+    margin-top: 20px;
+}
+.one {
+    font-size: 22px;
+}
+.one span { 
+    color: lightseagreen;
+    font-size: 26px;
+}
+.contact-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e; 
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+@keyframes slideCo {
+
+    from {
+        transform: translateX(-1100px);
+    }
+    to {
+        transform: translateX(0px) ;
+    }
+}
+.contact-one {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 58px;
+    font-weight: 800;
+    font-family: syne;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.contact-one span {
+    margin-top: 100px;
+    color: lightseagreen;
+    margin-bottom: 30px;
+    font-family: syne;
+    font-size: 58px;
+    font-weight: 800;
+    animation-name: slideIn;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.contact-two {
+    margin-bottom: 50px;
+    font-size: 42px;
+    font-weight: 700;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2c2c2c; 
+    color: #f1f1f1;
+}
+
+.contact-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white; 
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.contact-form button:hover {
+    background-color: lightseagreen;
+}
+.contact {
+   text-align: center;
+   color: white;
+}
+footer {
+    margin-top: 15px;
+ }
+
+ .foot-panel1 {
+    font-size: 24px;
+    background-image:url("map2.png");
+    color: white;
+    padding: 40px 20px;
+    background-size: cover;
+    height: 100%;
+    padding: 40px 0;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+.foot-ul {
+    margin-top: 20px;
+    display: grid;
+ }
+ .foot-ul  a {
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    color: #DDDDDD;
+}
+.foot-ul a:hover {
+   color: red;
+}
+.footer-bottom {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+} 
+
+
+/* Responsiveness */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .navbar .logo{
+        margin-top: -10px;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        width: 350px;
+        }
+
+
+    .navbar  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .video-background {
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+    #background-video {
+    height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+    .hero-one{
+        font-size: 1.9rem;
+    }
+    .navbar ul{
+        padding :2px 5px;
+    } 
+    .navbar ul li a {
+        
+        font-size: 1.1rem;
+        font-weight: 800px;
+        
+        padding: 20px 10px;
+        
+    }
+    .dropdown-content a {
+        
+        font-size: 0.75rem;
+        padding: 12px 14px;
+        
+        
+    }
+    
+    .hero-one{
+        font-size: 30px;
+        text-align: center;
+        width: 50%;
+    }
+
+    .panel-3-head{
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        font-size: 30px;
+
+    }
+
+    .multi-column{
+        padding-top: 50px;
+        margin: 0;
+        display: grid;
+        width:90%;
+        margin: auto;
+        gap: 40px;
+    }
+    .contact {
+        margin-top:200px;
+    }
+
+   
+
+}
+/* Medium devices (tablets, 481px to 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .navbar .logo{
+        margin-top: -10px;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        width: 350px;
+    }
+
+
+    .navbar  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hero-one{
+        font-size: 2.4rem;
+    }
+    .navbar ul{
+        padding :3px 10px;
+    }
+    .navbar ul li a {
+        
+        font-size: 1.4rem;
+        font-weight: 800px;
+        
+        padding: 25px 15px;
+        
+    }
+    .dropdown-content a {
+        
+        font-size: 1rem;
+        padding: 12px 12px;
+        
+        
+    }
+    .content a{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:480px) {
+ 
+
+    .hero-one{
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
+        width: 40;
+        position: relative;
+        animation-name: animate;
+        animation-duration: 1.5s;
+        /* animation-timing-function: ease-out; */
+        /* animation-fill-mode: forwards;  */
+        
+    }
+
+    .panel-3-head{
+        text-align: center;
+        width: 90%;/
+        margin: auto;
+        font-size: 30px;
+
+    }
+
+    .multi-column{
+        padding-top: 50px;
+        margin: 0;
+        display: grid;
+        width:90%;
+        margin: auto;
+        gap: 40px;
+    }
+    .contact {
+        margin-top:200px;
+    }
+
+}
+@media screen and (min-width:768px) {
+    /* .navbar .logo{
+        margin: auto;
+    }
+
+    .menu{
+        display: grid;  
+    } */
+
+    .hero-one{
+        font-size: 2.4rem;
+    } 
+    .panel-3-head{
+        text-align: center;
+        padding-left: 20px;
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .multi-column{
+        padding-top: 50px;
+        margin: 0;
+        display: grid;
+        width: 50%;
+        margin: auto;
+        gap: 40px;
+    }
+
+    .video-background {
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+    #background-video {
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+
+  
+
+}
+
+@media screen and (min-width:1024px) {
+    .navbar .logo{
+        margin: auto;
+    }
+
+    .menu{
+        display: flex;
+    }
+
+    .hero-one{
+        font-size: 35px;
+    }
+
+    .panel-3-head{
+        text-align: center;
+        padding-left: 20px;
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .multi-column{
+        padding-top: 50px;
+        margin: 0;
+        display: grid;
+        width: 50%;
+        margin: auto;
+        gap: 40px;
+    }
+  
+
+}
