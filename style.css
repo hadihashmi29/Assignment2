@@ -100,7 +100,7 @@ ul li :hover {
 /* Hero Section */
 .hero-section {
     margin-top: 250px;
-    width: 600px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -553,7 +553,7 @@ footer {
 
     .panel-3-head{
         text-align: center;
-        width: 90%;/
+        width: 100%;
         margin: auto;
         font-size: 30px;
 
